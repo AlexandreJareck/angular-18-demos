@@ -1,0 +1,19 @@
+<mat-card class="h-100 d-flex flex-column justify-content-between">
+  <img
+    class="card-img-top"
+    [src]="card.imageSrc"
+    height="164px"
+    width="253px"
+    [alt]="card.imageAlt"
+    style="object-fit: cover"
+  />
+  <mat-card-title class="text-center mt-2">{{ card.title }}</mat-card-title>
+  <mat-card-content class="flex-grow-1">
+    <p class="text-center">
+      {{ card.content }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="d-flex justify-content-center">
+    <button mat-button color="primary">{{ card.buttonText }}</button>
+  </mat-card-actions>
+</mat-card>
